@@ -1,0 +1,11 @@
+{% macro data(label='', type='text', placeholder='', calendar='') %}
+<label class="field">
+    <span class="label">{{ label }}</span>
+    <input type="{{ type }}" placeholder="{{ placeholder }}">
+    {% if calendar %}
+        <svg class="icon-calendar">
+            <use xlink:href="img/symbol/sprite.svg#icon-calendar"></use>
+        </svg>
+    {% endif %}
+</label>
+{% endmacro %}

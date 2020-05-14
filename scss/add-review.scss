@@ -1,0 +1,24 @@
+#add-review {
+    [name=review_advanteges], [name=review_disadvanteges] {
+        height: 6rem;
+    }
+
+    .rating {
+        align-items: center;
+        height: 3rem;
+        @include media-breakpoint('1199') {
+            height: auto;
+        }
+
+        span {
+            font-size: 0.875rem;
+            color: #9c9fa3;
+        }
+    }
+
+    .btn {
+        @include media-breakpoint('1199') {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% include 'head.html' %}
+<body>
+<div id="page">
+    {% include 'header-search.html' %}
+    <main id="main" class="container">
+        <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <i class="icon-sep"></i>
+            <span>Блог</span>
+        </div>
+        <h1 class="title -h1">Предложить заказ: <span class="-blue">Дамира давлатова</span></h1>
+        <div class="grid-main">
+            <div id="content">
+                <div class="-block -padding-2">
+                    <div class="success -center">
+                        <svg class="icon-tick-large">
+                            <use xlink:href="img/symbol/sprite.svg#icon-tick-large"></use>
+                        </svg>
+                        <p><strong>Готово!</strong>
+                            Заказ отправлен исполнителю и в ближайшее время он <br>свяжется с Вами для обсуждения деталей заказа.</p>
+                    </div>
+                    <div class="success-info">
+                        <p><strong>Что делать если исполнитель не отвечает:</strong></p>
+                        <p>1. Воспользуйтесь нашим <a href="#">каталогом</a>, чтобы предложить заказ другим исполнителем.</p>
+                        <p>2. <a href="#">Создайте заказ</a>, чтобы получить больше предложений от исполнителей.</p>
+                        <p>3. Рассмотрите рекомендуемых нами исполнителей:</p>
+
+                        <div id="other-freelancers">
+                            <div class="slider-freelancers">
+                                {% for i in range(0, 10) %}
+                                    <div>
+                                        <div class="freelancer">
+                                            <div class="user">
+                                                <figure>
+                                                    <img src="img/img-user-2.jpg" alt="">
+                                                </figure>
+                                                <div class="user-body">
+                                                    <div class="name">Дамира Давлатова</div>
+                                                    <div class="info">28 лет, Россия</div>
+                                                </div>
+                                            </div>
+                                            <div class="user-rating">
+                                                <div class="rating">
+                                                    <div class="stars" data-value="4">
+                                                        {% include 'stars.html' %}
+                                                    </div>
+                                                    <span>5 отзывов</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn -blue -center">Вернуться на главную</a>
+                    </div>
+                </div>
+
+            </div>
+            {% include 'sidebar-2.html' %}
+        </div>
+    </main>
+    {% include 'footer.html' %}
+</div>
+{% include 'scripts.html' %}
+</body>
+</html>
+

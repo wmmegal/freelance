@@ -1,0 +1,59 @@
+#faq {
+    .wrap {
+        border-radius: 0.313rem;
+        border: 0.063rem solid #e8e8e8;
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+
+    .faq {
+        border-bottom: 1px solid $border;
+
+        .question {
+            padding: 1.25rem 1.5rem;
+            color: $blue;
+            position: relative;
+            font-size: 1.25rem;
+            font-weight: 600;
+            cursor: pointer;
+            @include media-breakpoint('1199') {
+                font-size: 1rem;
+                padding: 1rem 2rem 1rem 1rem;
+            }
+
+            &:before {
+                content: '+';
+                position: absolute;
+                top: 0.875rem;
+                right: 1.25rem;
+                font-size: 1.5rem;
+                font-weight: normal;
+                @include media-breakpoint('1199') {
+                    font-size: 2rem;
+                    top: 0.5rem;
+                    right: 1rem;
+                }
+            }
+
+            &.active {
+                cursor: default;
+
+                &:before {
+                    content: '-';
+                }
+            }
+        }
+
+        .answer {
+            padding: 0 1.5rem 1.25rem 1.5rem;
+            display: none;
+            @include media-breakpoint('1199') {
+                padding: 0 1rem 1rem 1rem;
+            }
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}

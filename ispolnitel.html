@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% include 'head.html' %}
+<body>
+<div id="page">
+    {% include 'header-search.html' %}
+    <main id="main" class="container">
+        <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <i class="icon-sep"></i>
+            <span>Блог</span>
+        </div>
+        <h1 class="title -h1">Исполнители: <span class="-blue">Дизайн сайтов</span></h1>
+        <div class="grid-main">
+            <div id="content">
+                <div id="freelancer">
+                    <div class="card -block">
+                        <div class="card-info -padding-2">
+                            <div class="user">
+                                <figure>
+                                    <img src="img/img-user-2.jpg" alt="">
+                                </figure>
+                                <div class="user-body">
+                                    <div class="name">Дамира Давлатова</div>
+                                    <div class="info">28 лет, Россия</div>
+                                </div>
+                            </div>
+                            <div class="user-rating">
+                                <div class="rating">
+                                    <div class="stars" data-value="4">
+                                        {% include 'stars.html' %}
+                                    </div>
+                                    <span>5 отзывов</span>
+                                </div>
+                            </div>
+                            <div class="user-price">
+                                <div class="hour">$10/час</div>
+                                <div class="month">от $400/мес.</div>
+                            </div>
+                            <div class="other-accounts">
+                                <a href="#"><i class="icon-fl"></i></a>
+                                <a href="#"><i class="icon-weblancer"></i></a>
+                                <a href="#"><i class="icon-habr"></i></a>
+                                <a href="#"><i class="icon-upwork"></i></a>
+                                <a href="#"><i class="icon-kwork"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-categories -line -padding-2">
+                            <a href="#" class="link-category">UX/UI</a>
+                            <a href="#" class="link-category">Веб-дизайн</a>
+                            <a href="#" class="link-category">Figma</a>
+                            <a href="#" class="link-category">Sketch</a>
+                            <a href="#" class="link-category">Прототипирование</a>
+                            <a href="#" class="link-category">Иконки</a>
+                            <a href="#" class="link-category">Копирайтинг</a>
+                        </div>
+                        <div class="card-actions -padding-2">
+                            <ul class="ul-reset" id="tabs">
+                                <li class="active">Информация</li>
+                                <li>Портфолио</li>
+                                <li>Отзывы</li>
+                            </ul>
+                            <div class="other-accounts">
+                                <a href="#"><i class="icon-fl"></i></a>
+                                <a href="#"><i class="icon-weblancer"></i></a>
+                                <a href="#"><i class="icon-habr"></i></a>
+                                <a href="#"><i class="icon-upwork"></i></a>
+                                <a href="#"><i class="icon-kwork"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-box -mb-2 -visible">
+                        <div class="-block -padding-2 -mb-2" id="about">
+                            <div class="article">
+                                <div class="title -h6">О себе</div>
+                                <p>Всегда качественный результат. Мои клиенты всегда самые лучшие и у меня нет капризных
+                                    заказчиков, так как всегда нахожу, как красиво и удачно реализовать пожелания и
+                                    правки.
+
+                                <p><b>Страдаю перфекционизмом. Не делаю дизайн ради дизайна, делаю дизайн ради
+                                        пользователя</b>. Не работаю в одном стиле, работаю в любом, какой нужен
+                                    клиенту. Главное — доступно объясните свои пожелания, и вы будете довольны
+                                    результатом.
+                                </p>
+
+                                <p>Люблю интересные задания, необычные идеи и реализовывать их. Оперативно отвечаю
+                                    817103@gmail.com</p>
+
+                                <p>Опыт работы более 8 лет. Начинала работать ещё в те фантастические времена, когда
+                                    дизайнеры умели делать и вёрстку и натяжку на CMS. Потому я всегда точно понимаю,
+                                    что я
+                                    рисую.</p>
+
+                                <p>Люблю критику. Если вам попался дизайнер, который остро реагирует на вашу критику, то
+                                    перед вами непрофессионал, либо новичок. Критика делает проект только лучше, так как
+                                    даёт возможность дизайнеру ещё раз посмотреть на свою работу и внести больше
+                                    деталей.
+                                    Если у вас есть сумасшедшая идея, а дизайнер убеждает вас, что она бредовая, то с
+                                    большой вероятностью, это не ваш дизайнер. На моей практике 90% бредовых идей можно
+                                    воплотить адекватно и сделать изюминкой сайта. Тот дизайнер, у которого есть опыт,
+                                    может
+                                    сделать нестандартные вещи понятными и доступными для пользователей.</p>
+                            </div>
+                        </div>
+                        <div class="services -block -mb-2 -padding-2">
+                            <div class="title -h6">Услуги</div>
+                            <dl>
+                                <dt>
+                                    <span>Дизайн мобильного приложения</span>
+                                </dt>
+                                <dd>
+                                    $300
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <span>Дизайн интернет-магазина</span>
+                                </dt>
+                                <dd>
+                                    $250
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="tab-box -block -padding-2" id="portfolio">
+                        <div class="title -h6">Портфолио</div>
+                        <div class="grid col-3">
+                            {% for i in range(0,6) %}
+                                <a href="#" class="item">
+                                    <figure>
+                                        <img src="img/img-portfolio-3.jpg" alt="" class="-object-fit">
+                                    </figure>
+                                    <p>Дизайн каталога казино Vulkan</p>
+                                </a>
+                            {% endfor %}
+                        </div>
+                        <a href="#" class="link-more"><span>→</span> Все работы</a>
+                    </div>
+                    <div class="tab-box -mb-2">
+                        <div id="reviews" class="-block">
+                            <div class="title -h6 -padding-2">Отзывы</div>
+                            <div class="wrap">
+                                <div class="review -padding-2 -line">
+                                    <div class="review-head">
+                                        <div class="author">
+                                            <span>Сергей Прядкин</span>, 21 марта 2020
+                                        </div>
+                                        <div class="rating">
+                                            <div class="stars" data-value="3">
+                                                {% include 'stars.html' %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-title">Дизайн мобильного приложения</div>
+                                    <div class="review-text">
+                                        Из более чем 40-а откликов выбрал именно Илью и не прогадал. Сделал все быстро и на
+                                        уровне! Спасибо за работу! Крайне рекомендую всем! В будущем еще будет сотрудничать
+                                    </div>
+                                    <div class="review-advantages-disadvantages">
+                                        <div class="row-cols">
+                                            <div class="col-50">
+                                                <div class="review-title">Преимущества</div>
+                                                <div class="review-text">Все супер</div>
+                                            </div>
+                                            <div class="col-50">
+                                                <div class="review-title">Недостатки</div>
+                                                <div class="review-text">Их нет!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-thumbs">
+                                        <div class="row-cols -margin-3">
+                                            {% for i in range(0, 16) %}
+                                                <div class="col-16">
+                                                    <a href="img/img-thumb.jpg" data-fancybox="gallery"><img
+                                                                src="img/img-thumb.jpg" class="-object-fit -rounded" alt=""></a>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div class="likes">
+                                        <button class="btn-like">
+                                            <svg class="icon-like">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                        <button class="btn-dislike">
+                                            <svg class="icon-dislike">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-dislike"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="review -padding-2 -line">
+                                    <div class="review-head">
+                                        <div class="author">
+                                            <span>Сергей Прядкин</span>, 21 марта 2020
+                                        </div>
+                                        <div class="rating">
+                                            <div class="stars" data-value="3">
+                                                {% include 'stars.html' %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-text">
+                                        Из более чем 40-а откликов выбрал именно Илью и не прогадал. Сделал все быстро и на
+                                        уровне! Спасибо за работу! Крайне рекомендую всем! В будущем еще будет сотрудничать
+                                    </div>
+                                    <div class="likes">
+                                        <button class="btn-like">
+                                            <svg class="icon-like">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                        <button class="btn-dislike">
+                                            <svg class="icon-dislike">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-dislike"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="review -padding-2 -line">
+                                    <div class="review-head">
+                                        <div class="author">
+                                            <span>Сергей Прядкин</span>, 21 марта 2020
+                                        </div>
+                                        <div class="rating">
+                                            <div class="stars" data-value="3">
+                                                {% include 'stars.html' %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-title">Топовый дизайн для сайта компании</div>
+                                    <div class="review-text">
+                                        Из более чем 40-а откликов выбрал именно Илью и не прогадал. Сделал все быстро и на
+                                        уровне!
+                                    </div>
+                                    <div class="review-advantages-disadvantages">
+                                        <div class="row-cols">
+                                            <div class="col-50">
+                                                <div class="review-title">Преимущества</div>
+                                                <div class="review-text">Все супер</div>
+                                            </div>
+                                            <div class="col-50">
+                                                <div class="review-title">Недостатки</div>
+                                                <div class="review-text">Их нет!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="likes">
+                                        <button class="btn-like">
+                                            <svg class="icon-like">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                        <button class="btn-dislike">
+                                            <svg class="icon-dislike">
+                                                <use xlink:href="img/symbol/sprite.svg#icon-dislike"></use>
+                                            </svg>
+                                            <span>0</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="link-more"><span>→</span> Все отзывы</a>
+                        </div>
+
+                        <div class="-block -padding-2">
+                            <div class="title -h6">Добавить отзыв</div>
+                            <form action="" id="add-review" class="form">
+                                <div class="row-cols -margin-2 -mb-1">
+                                    <div class="col-33">
+                                        <label class="form-field">
+                                            <input type="text" name="name" placeholder="Фамилия и имя *">
+                                        </label>
+                                    </div>
+                                    <div class="col-33">
+                                        <label class="form-field">
+                                            <input type="email" name="email" placeholder="E-Mail *">
+                                        </label>
+                                    </div>
+                                    <div class="col-33">
+                                        <div class="rating">
+                                            <div class="stars clickable" data-value="">
+                                                {% include 'stars.html' %}
+                                            </div>
+                                            <span>Оценка <span class="-red">*</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="form-field">
+                                    <input type="text" name="review_title" placeholder="Название заказа">
+                                </label>
+                                <label class="form-field">
+                                    <textarea name="review_text" placeholder="Текст отзыва *"></textarea>
+                                </label>
+                                <div class="form-field -merged">
+                                <textarea name="review_advanteges" placeholder="Преимущества"
+                                          class="-width-50"></textarea>
+                                    <textarea name="review_disadvanteges" placeholder="Недостатки"
+                                              class="-width-50"></textarea>
+                                </div>
+                                <label for="file" class="files-area -mb-1">
+                                    <span>Загрузить фотографии</span>
+                                    <input type="file" id="file">
+                                </label>
+                                <div class="download-images -mb-1">
+                                    <div class="row-cols -margin-3">
+                                        {% for i in range(0, 16) %}
+                                            <div class="col-16">
+                                                <div class="image">
+                                                    <img src="img/img-thumb.jpg" alt="" class="-object-fit">
+                                                    <input type="hidden" name="gallery[]" value="585">
+                                                    <button type="button" class="btn-del-img">X</button>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                <p class="-mb-1"><span class="-red">*</span> Поля, обязательные для заполнения</p>
+                                <label class="checkbox -mb-1">
+                                    <input type="checkbox" name="rule" checked>
+                                    <span>Я согласен с использованием сайтом freelanceratings.com моих <a href="#">персональных данных</a> для обработки данного обращения.</span>
+                                </label>
+                                <button type="submit" class="btn -orange">Добавить отзыв</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="-block -padding-2" id="other-freelancers">
+                        <div class="title -h6">Исполнители с похожим навыком</div>
+                        <div class="slider-freelancers">
+                            {% for i in range(0, 10) %}
+                                <div>
+                                    <div class="freelancer">
+                                        <div class="user">
+                                            <figure>
+                                                <img src="img/img-user-2.jpg" alt="">
+                                            </figure>
+                                            <div class="user-body">
+                                                <div class="name">Дамира Давлатова</div>
+                                                <div class="info">28 лет, Россия</div>
+                                            </div>
+                                        </div>
+                                        <div class="user-rating">
+                                            <div class="rating">
+                                                <div class="stars" data-value="4">
+                                                    {% include 'stars.html' %}
+                                                </div>
+                                                <span>5 отзывов</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% include 'sidebar.html' %}
+        </div>
+    </main>
+    {% include 'footer.html' %}
+</div>
+{% include 'scripts.html' %}
+</body>
+</html>
+

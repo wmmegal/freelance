@@ -1,0 +1,102 @@
+#filter {
+    position: relative;
+    z-index: 100;
+
+    .filter-search {
+        position: relative;
+
+        label {
+            display: block;
+
+            input {
+                height: 4rem;
+                width: 100%;
+                border: none;
+                border-radius: $border-radius;
+                padding: 0 0 0 3rem;
+                font-family: $panton;
+                color: rgba($color, 0.5);
+                font-size: 0.875rem;
+                @include media-breakpoint('1199') {
+                    height: 3rem;
+                }
+            }
+        }
+        .icon-search {
+            fill: $orange;
+            width: 1.25rem;
+            height: 1.25rem;
+            @include center-y;
+            left: 1rem;
+        }
+        .btn-filter-toggle {
+            @include center-y;
+            right: 7.5rem;
+            color: $blue;
+            border-bottom: 1px dotted rgba($blue, 0.3);
+            font-size: 0.875rem;
+            @include media-breakpoint('1199') {
+                font-size: 0;
+                right: 0;
+                border-left: 1px solid $border;
+                transform: none;
+                top: 0;
+                bottom: 0;
+                width: 3rem;
+                border-bottom: 0;
+                text-align: center;
+            }
+
+            .icon-filter {
+                display: none;
+                width: 1.25rem;
+                height: 1.25rem;
+                fill: $blue;
+
+                @include media-breakpoint('1199') {
+                    display: inline-block;
+                }
+            }
+        }
+        .btn {
+            @include center-y;
+            right: 1rem;
+            line-height: 2.5rem;
+            @include media-breakpoint('1199') {
+                display: none;
+            }
+        }
+    }
+
+    .filter-details {
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: $shadow;
+        border-top: 1px solid $border;
+        max-height: 0;
+        transition: $transition;
+        padding: 0;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            max-height: 1000px;
+            padding: 1rem;
+        }
+        .row-cols {
+            [class*=col]:not(.-mb-1) {
+                @include media-breakpoint('1199') {
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+        .btn {
+            display: none;
+
+            @include media-breakpoint('1199') {
+                display: inline-block;
+                margin-top: 1rem;
+            }
+        }
+    }
+}

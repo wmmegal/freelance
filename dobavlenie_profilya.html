@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% include 'head.html' %}
+<body>
+<div id="page">
+    {% include 'header-search.html' %}
+    <main id="main" class="container">
+        <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <i class="icon-sep"></i>
+            <span>Блог</span>
+        </div>
+        <h1 class="title -h1">Добавление профиля</h1>
+        <div class="grid-main">
+            <div id="content">
+                <div class="form">
+                    <div class="adding-process -block">
+                        <ul class="ul-reset">
+                            <li class="active">Данные исполнителя</li>
+                            <li>Порфтолио</li>
+                            <li>Готово</li>
+                        </ul>
+                    </div>
+                    <form action="" id="add-profile" class="-block ">
+                        <div class="-padding-2 -line">
+                            <fieldset>
+                                <legend class="title -h6">Ваши данные</legend>
+                                <div class="row-cols -margin-3 -mb-1">
+                                    <div class="col-33">
+                                        <label class="form-field">
+                                            <input type="text" name="name" placeholder="Фамилия и имя">
+                                        </label>
+                                    </div>
+                                    <div class="col-33">
+                                        <label class="form-field">
+                                            <input type="text" name="birthday" placeholder="Дата рождения">
+                                        </label>
+                                    </div>
+                                    <div class="col-33">
+                                        <label class="form-field">
+                                            <input type="text" name="location" placeholder="Ваше местоположение">
+                                        </label>
+                                    </div>
+                                </div>
+                                <label class="form-field">
+                                    <textarea name="about" placeholder="О себе"></textarea>
+                                </label>
+                            </fieldset>
+                        </div>
+                        <div class="-padding-2 -line">
+                            <fieldset >
+                                <legend class="title -h6">Навыки</legend>
+                                <label class="form-field">
+                                    <input type="text" name="category_search" placeholder="Поиск по категориям">
+                                </label>
+                                <div class="categories">
+                                    <a href="#" class="link-category">UX/UI</a>
+                                    <a href="#" class="link-category">Веб-дизайн</a>
+                                    <a href="#" class="link-category">Figma</a>
+                                    <a href="#" class="link-category">Sketch</a>
+                                    <a href="#" class="link-category">Прототипирование</a>
+                                    <a href="#" class="link-category">Иконки</a>
+                                    <a href="#" class="link-category">Копирайтинг</a>
+                                </div>
+
+                            </fieldset>
+                        </div>
+                        <div class="-padding-2 -line">
+                            <fieldset>
+                                <legend class="title -h6">Вознаграждение</legend>
+                                <div class="row-cols -margin-3">
+                                    <div class="col-33">
+                                        <label class="form-field">
+                                            <input type="text" name="price_hour" placeholder="Стоимость за час">
+                                        </label>
+                                    </div>
+                                    <div class="col-33">
+                                        <label class="form-field">
+                                            <input type="text" name="price_month" placeholder="Стоимость за месяц">
+                                        </label>
+                                    </div>
+                                    <div class="col-33">
+                                        <label class="form-field">
+                                            <select name="currency">
+                                                <option value="Руб.">Руб.</option>
+                                                <option value="$">$</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="-padding-2 -line">
+                            <fieldset>
+                                <legend class="title -h6">Профили в биржах</legend>
+                                <div class="adding-field -mb-3">
+                                    <label class="form-field -merged">
+                                        <select name="exchange" class="-width-30">
+                                            <option value="weblancer.net">weblancer.net.</option>
+                                            <option value="weblancer.net">weblancer.net</option>
+                                            <option value="weblancer.net">weblancer.net</option>
+                                            <option value="weblancer.net">weblancer.net</option>
+                                        </select>
+                                        <input type="text" name="exchange_profile" placeholder="Ссылка на профиль" class="-width-70">
+                                    </label>
+                                    <button type="button" class="btn-del-item">
+                                        <svg class="icon-cross">
+                                            <use xlink:href="img/symbol/sprite.svg#icon-cross"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button type="button" class="btn -blue -shadow">Добавить еще </button>
+
+                            </fieldset>
+                        </div>
+                        <div class="-padding-2 -line">
+                            <fieldset>
+                                <legend class="title -h6">Услуги</legend>
+                                <div class="adding-field -mb-3">
+                                    <label class="form-field -merged">
+                                        <input type="text" name="service" placeholder="Название услуги" class="-width-70">
+                                        <input type="text" name="service_price" placeholder="Цена" class="-width-30">
+                                    </label>
+                                    <button type="button" class="btn-del-item">
+                                        <svg class="icon-cross">
+                                            <use xlink:href="img/symbol/sprite.svg#icon-cross"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button type="button" class="btn -blue -shadow">Добавить еще </button>
+
+                            </fieldset>
+                        </div>
+                        <div class="-padding-2 -line">
+                            <fieldset>
+                                <legend class="title -h6">Контактные данные</legend>
+                                <div class="row-cols -margin-3 -mb-1">
+                                    <div class="col-33">
+                                        <label class="form-field">
+                                            <input type="text" name="tel" placeholder="Телефон">
+                                        </label>
+                                    </div>
+                                    <div class="col-33">
+                                        <label class="form-field">
+                                            <input type="text" name="email" placeholder="E-Mail">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="adding-field -mb-1">
+                                    <label class="form-field -merged">
+                                        <select name="messenger" class="-width-30">
+                                            <option value="Telegram">Telegram.</option>
+                                            <option value="Telegram">Telegram</option>
+                                            <option value="Telegram">Telegram</option>
+                                            <option value="Telegram">Telegram</option>
+                                        </select>
+                                        <input type="text" name="login" placeholder="Логин" class="-width-70">
+                                    </label>
+                                    <button type="button" class="btn-del-item">
+                                        <svg class="icon-cross">
+                                            <use xlink:href="img/symbol/sprite.svg#icon-cross"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button type="button" class="btn -blue -shadow">Добавить еще </button>
+                            </fieldset>
+                        </div>
+                    </form>
+                    <div class="buttons -block -padding-2">
+                        <button type="button" class="btn -gray">Отмена</button>
+                        <button type="button" class="btn -orange -shadow">Далее</button>
+                    </div>
+                </div>
+
+            </div>
+            {% include 'sidebar-2.html' %}
+        </div>
+    </main>
+    {% include 'footer.html' %}
+</div>
+{% include 'scripts.html' %}
+</body>
+</html>
+

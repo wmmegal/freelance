@@ -1,0 +1,45 @@
+#faq-profile {
+    .faq {
+        border-bottom: 1px solid $border;
+        margin: 0 -1rem 0.5rem -1rem;
+        padding: 0 1rem 0.5rem 1rem;
+
+        .question {
+            color: $blue;
+            position: relative;
+            cursor: pointer;
+            line-height: 1.5rem;
+            font-size: 0.875rem;
+
+            &:before {
+                content: '';
+                position: absolute;
+                background: url("../img/icon-arr-down.svg") no-repeat;
+                width: 0.5rem;
+                height: 0.313rem;
+                top: 0.7rem;
+                right: 0;
+                transition: $transition;
+            }
+
+            &.active {
+                cursor: default;
+
+                &:before {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .answer {
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        &:last-child {
+            border-bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+}

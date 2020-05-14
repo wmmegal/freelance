@@ -1,0 +1,116 @@
+#steps {
+    background: url("../img/bg-wave.svg") no-repeat top;
+    padding: 2.5rem 0 3.5rem 0;
+    margin-bottom: 1.5rem;
+    background-size: 100% 17.5rem;
+    @include media-breakpoint('1199') {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-size: 100%  3.875rem;
+        margin-bottom: 2rem;
+    }
+
+    .wrap {
+        box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.04);
+        border-radius: 0.25rem;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .step {
+            width: 50%;
+            padding: 1.5rem 0;
+            display: flex;
+            position: relative;
+            align-items: center;
+            border-right: 1px solid $border;
+            border-bottom: 1px solid $border;
+            @include media-breakpoint('1199') {
+                width: 100%;
+                padding: 1rem 0;
+            }
+
+            figure {
+                width: 5.5rem;
+                text-align: center;
+            }
+            .step-body {
+                width: calc(100% - 5.5rem);
+                padding-right: 0.5rem;
+
+                span {
+                    color: $blue;
+                    text-transform: uppercase;
+                    font-size: 0.75rem;
+                }
+                p {
+                    font-size: 0.875rem;
+                    margin-top: 0.5rem;
+                }
+            }
+            .triangle {
+                position: absolute;
+                stroke: #e8e8e8;
+                fill: #fff;
+                width: 1rem;
+                height: 0.5rem;
+            }
+            &:nth-child(1) {
+                .triangle {
+                    top: 50%;
+                    right: -8px;
+                    transform: rotate(90deg) translateY(-50%);
+                    @include media-breakpoint('1199') {
+                        top: auto;
+                        left: 2rem;
+                        bottom: -8px;
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+            &:nth-child(2) {
+                border-right: 0;
+
+                .triangle {
+                    left: 50%;
+                    bottom: -8px;
+                    transform: rotate(-180deg) translateX(-50%);
+                    @include media-breakpoint('1199') {
+                        left: 2rem;
+                        bottom: -8px;
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+            &:nth-child(3) {
+                order: 3;
+                border-right: 0;
+                border-bottom: 0;
+                z-index: 10;
+                @include media-breakpoint('1199') {
+                    order: 1;
+                    border-bottom: 1px solid $border;
+                }
+
+                .triangle {
+                    top: 50%;
+                    left: -8px;
+                    transform: rotate(-90deg) translateY(-50%);
+                    @include media-breakpoint('1199') {
+                        top: auto;
+                        left: 2rem;
+                        bottom: -8px;
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+            &:nth-child(4) {
+                border-bottom: 0;
+                @include media-breakpoint('1199') {
+                    order: 2;
+                }
+            }
+        }
+    }
+}

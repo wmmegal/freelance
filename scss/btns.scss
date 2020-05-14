@@ -1,0 +1,47 @@
+a.btn, .btn {
+    @extend %btn;
+    line-height: 3rem;
+    border-radius: 0.25rem;
+    font-family: $panton;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0 1.5rem;
+    transition: $transition;
+    text-decoration: none !important;
+
+    &.-blue {
+        background: $blue;
+        color: #fff;
+
+        &.-shadow {
+            box-shadow: 0 0.125rem 0.625rem rgba(34, 110, 242, 0.3);
+        }
+
+        &:hover {
+            background: #396ec9;
+        }
+    }
+
+    &.-orange {
+        background: $orange;
+        color: #fff;
+
+        &.-shadow {
+            box-shadow: 0 0.125rem 0.625rem rgba(237, 148, 44, 0.3);
+        }
+
+        &:hover {
+            background: #ef9e41;
+        }
+    }
+
+    &.-gray {
+        background-color: #f9f9f9;
+    }
+
+    &.-center {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

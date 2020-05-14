@@ -1,0 +1,52 @@
+#cta {
+    background: $blue;
+
+    .container {
+        padding: 6.5rem 0 12rem 0;
+        position: relative;
+        @include media-breakpoint('1199') {
+            padding: 1rem 0;
+        }
+
+        figure {
+            position: absolute;
+            top: 6rem;
+            right: 0;
+            @include media-breakpoint('1199') {
+                position: static;
+                margin-top: 1rem;
+            }
+        }
+
+        .cta-title {
+            font-size: 4rem;
+            font-weight: 600;
+            color: #fff;
+            @include media-breakpoint('1199') {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        p {
+            color: #a8c8ff;
+            font-size: 1.125rem;
+            margin-bottom: 2.5rem;
+            @include media-breakpoint('1199') {
+                font-size: 0.875rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .example {
+            font-size: 0.875rem;
+            color: #fff;
+
+            a {
+                color: #a8c8ff;
+                border-bottom: 1px dotted;
+            }
+        }
+    }
+
+}

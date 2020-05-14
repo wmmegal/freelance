@@ -1,0 +1,28 @@
+.nav-links {
+    border-radius: $border-radius;
+    background-color: #ffffff;
+    box-shadow: $shadow;
+    margin: 1.5rem 0;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    @include media-breakpoint('1199') {
+        margin-top: 1rem;
+    }
+
+    a, span {
+        line-height: 3rem;
+        width: 3rem;
+        text-align: center;
+        font-size: 0.875rem;
+        border-right: 1px solid $border;
+        color: $blue;
+    }
+    a:hover, span {
+        color: rgba($color, 0.5);
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

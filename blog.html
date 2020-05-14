@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% include 'head.html' %}
+<body>
+<div id="page">
+    {% include 'header-search.html' %}
+    <main id="main" class="container">
+        <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <i class="icon-sep"></i>
+            <span>Блог</span>
+        </div>
+        <section id="blog">
+            <h1 class="title -h1">Блог</h1>
+            <div class="grid col-3">
+                {% for i in range(0, 9) %}
+                    <a href="#" class="entry">
+                        <figure>
+                            <img src="img/img-blog.jpg" alt="" class="entry-img -object-fit">
+                            <figcaption>
+                                <time datetime="Вчера, 15:46" class="entry-date">Вчера, 15:46</time>
+                                <span class="entry-title">Плюсы и минусы работы на бирже fl.ru</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                {% endfor %}
+            </div>
+            <div class="nav-links">
+                <span>1</span>
+                <a href="#">2</a>
+                <a href="#">2</a>
+                <a href="#">2</a>
+                <a href="#">2</a>
+            </div>
+        </section>
+    </main>
+    {% include 'footer.html' %}
+</div>
+{% include 'scripts.html' %}
+</body>
+</html>
+

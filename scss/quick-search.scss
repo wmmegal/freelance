@@ -1,0 +1,40 @@
+#quick-search {
+    max-width: 34.5rem;
+    margin-bottom: .5rem;
+    position: relative;
+
+    label {
+        display: block;
+
+        input {
+            width: 100%;
+            height: 4rem;
+            border-radius: 0.25rem;
+            background-color: #ffffff;
+            font-family: $panton;
+            padding: 0 1rem;
+            border: none;
+            color: rgba(#15181e, 0.2);
+            font-size: 1rem;
+            @include media-breakpoint('1199') {
+                height: 3rem;
+                font-size: 0.875rem;
+            }
+
+            &:focus {
+                color: #15181e;
+            }
+        }
+    }
+    .search-results {
+        @extend %drop-list;
+        @extend %hidden;
+        width: 16rem;
+        right: auto;
+        left: 0;
+
+        &.active {
+            @extend %visible;
+        }
+    }
+}

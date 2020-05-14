@@ -1,0 +1,22 @@
+#contacts {
+    dl {
+        @extend %flex-inline;
+        font-size: 0.875rem;
+        flex-wrap: wrap;
+        margin-bottom: 0.75rem;
+
+        dt, dd {
+            a {
+                color: $blue;
+            }
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+
+
+

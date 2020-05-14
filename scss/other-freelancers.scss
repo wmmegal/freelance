@@ -1,0 +1,92 @@
+#other-freelancers {
+    .slider-freelancers {
+        margin: 0 -1rem;
+        position: relative;
+
+        .slick-dots {
+            margin-top: 1rem;
+        }
+    }
+
+    .freelancer {
+        @extend %flex-inline;
+        padding: 0 1rem;
+        border-right: 1px solid $border;
+        @include media-breakpoint('1199') {
+            display: block;
+            border-right: 0;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+
+            @include media-breakpoint('1199') {
+                justify-content: space-between;
+                margin-bottom: 0.75rem;
+            }
+
+            figure {
+                width: 3rem;
+                height: 3rem;
+                overflow: hidden;
+                border-radius: 50%;
+                @include media-breakpoint('1199') {
+                    order: 2;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &-body {
+                padding-left: 1rem;
+                @include media-breakpoint('1199') {
+                    padding-left: 0;
+                }
+
+                .name {
+                    font-size: 0.875rem;
+                    color: $dark;
+                    margin-bottom: 0.5rem;
+                    font-weight: 600;
+                }
+
+                .info {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+
+        .user-rating {
+            text-align: right;
+
+            .rating {
+                display: block;
+
+                span {
+                    display: block;
+                    margin-top: .5rem;
+                    font-size: 0.75rem;
+                    margin-left: 0;
+                    color: #4f5464;
+                }
+            }
+
+
+            @include media-breakpoint('1199') {
+                margin-bottom: 0.5rem;
+
+                .rating {
+                    display: flex;
+
+                    span {
+                        margin-top: 0;
+                        margin-left: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

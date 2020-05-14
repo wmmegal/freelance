@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% include 'head.html' %}
+<body>
+<div id="page">
+    {% include 'header-search.html' %}
+    <div id="e-404">
+        <div class="container">
+            <figure>
+                <img src="img/img-404.svg" alt="">
+            </figure>
+            <div class="e-404-title">
+                Ошибка 404
+            </div>
+            <p>К сожалению, запрашиваемая страница не найдена, <br>
+                но есть другие, тоже хорошие.</p>
+            <p><a href="#">Главная страница</a> <a href="#">Фрилансеры</a></p>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+</div>
+{% include 'scripts.html' %}
+</body>
+</html>
+

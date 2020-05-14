@@ -1,0 +1,29 @@
+<div id="sidebar">
+    <div class="-block -padding-2">
+       <div class="article">
+           <figure class="-center -mb-1">
+               <img src="img/icon-question.svg" alt="">
+           </figure>
+           <p>Чем ваша услуга лучше других? Напишите короткое, но емкое описание.</p>
+           <p>Не используйте в заголовке CAPSLOCK, спец-символы и прочие трюки для привлечения внимания</p>
+           <p>Пишите грамотно, чтобы ваш заказ можно было без проблем найти через поиск</p>
+       </div>
+    </div>
+    <div class="-block -padding-2" id="faq-profile">
+        <div class="article">
+            <div class="title -h6">Частые вопросы</div>
+            {% for i in range(0, 6)  %}
+                <div class="faq">
+                    <div class="question">
+                        Обязательно ли выбирать исполнителя?
+                    </div>
+                    <div class="answer">
+                        <p>Чем ваша услуга лучше других? Напишите короткое, но емкое описание.</p>
+                        <p>Не используйте в заголовке CAPSLOCK, спец-символы и прочие трюки для привлечения внимания</p>
+                        <p>Пишите грамотно, чтобы ваш заказ можно было без проблем найти через поиск</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

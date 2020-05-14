@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>DSGN</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+
+<body>
+<div id="page">
+    <header id="header">
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="img/logo.svg" alt="">
+            <span>РейтингФрилансеров</span>
+        </a>
+        <form action="" id="quick-search">
+            <label>
+                <input type="text" placeholder="Напишите, чем вам помочь...">
+            </label>
+            <ul class="ul-reset search-results">
+                <li><a href="#">Дизайн сайта</a></li>
+                <li><a href="#">Дизайн мобильного приложения </a></li>
+                <li><a href="#">Дизайн буклетов</a></li>
+                <li><a href="#">Дизайн интерьера</a></li>
+            </ul>
+        </form>
+        <button class="btn-menu">
+            <i class="icon-burger"></i>
+        </button>
+        <nav id="menu">
+            <ul class="ul-reset">
+                <li>
+                    <a href="#">Для исполнителя</a>
+                    <ul>
+                        <li><a href="#">Разместить заказ</a></li>
+                        <li><a href="#">Найти исполнителя</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Для заказчика</a>
+                    <ul>
+                        <li><a href="#">Разместить заказ</a></li>
+                        <li><a href="#">Найти исполнителя</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main id="main" class="container">
+        <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <i class="icon-sep"></i>
+            <span>Блог</span>
+        </div>
+        <h1 class="title -h1">Создать заказ</h1>
+        <div class="grid-main">
+            <div id="content">
+                <div class="form">
+                    <form action="" id="add-order" class="-block -padding-2">
+                        <div class="row-cols -margin-3 -mb-1">
+                            <div class="col-33">
+                                <label class="form-field">
+                                    <input type="text" name="name" placeholder="Фамилия и имя">
+                                </label>
+                            </div>
+                            <div class="col-33">
+                                <label class="form-field">
+                                    <input type="text" name="birthday" placeholder="Дата рождения">
+                                </label>
+                            </div>
+                            <div class="col-33">
+                                <label class="form-field">
+                                    <input type="text" name="location" placeholder="Ваше местоположение">
+                                </label>
+                            </div>
+                        </div>
+                        <label class="form-field">
+                            <input type="text" name="order_title" placeholder="Название проекта">
+                        </label>
+                        <label class="form-field">
+                            <textarea name="order_desc" placeholder="Описание"></textarea>
+                        </label>
+                        <div class="row-cols -margin-3 -mb-1">
+                            <div class="col-66">
+                                <div class="form-field -merged">
+                                    <input type="text" name="budget" placeholder="Бюджет" class="-width-50">
+                                    <select name="currency" class="-width-50">
+                                        <option value="Руб.">Руб.</option>
+                                        <option value="$">$</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <label class="form-field">
+                                    <input type="text" name="term" placeholder="Срок">
+                                </label>
+                            </div>
+                        </div>
+                        <label for="files" class="files-area -mb-1">
+                            <span>Нажмите или перетащите для загрузки файлов</span>
+                            <input type="file" id="files">
+                        </label>
+                        <p class="-mb-1"><span class="-red">*</span> Поля, обязательные для заполнения</p>
+                        <label class="checkbox -mb-1">
+                            <input type="checkbox" name="rule" checked>
+                            <span>Я согласен с использованием сайтом freelanceratings.com моих <a href="#">персональных данных</a> для обработки данного обращения.</span>
+                        </label>
+                        <button type="submit" class="btn -orange">Отправить заказ</button>
+                    </form>
+                </div>
+
+            </div>
+            <div id="sidebar">
+    <div class="-block -padding-2">
+       <div class="article">
+           <figure class="-center -mb-1">
+               <img src="img/icon-question.svg" alt="">
+           </figure>
+           <p>Чем ваша услуга лучше других? Напишите короткое, но емкое описание.</p>
+           <p>Не используйте в заголовке CAPSLOCK, спец-символы и прочие трюки для привлечения внимания</p>
+           <p>Пишите грамотно, чтобы ваш заказ можно было без проблем найти через поиск</p>
+       </div>
+    </div>
+    <div class="-block -padding-2" id="faq-profile">
+        <div class="article">
+            <div class="title -h6">Частые вопросы</div>
+            
+                <div class="faq">
+                    <div class="question">
+                        Обязательно ли выбирать исполнителя?
+                    </div>
+                    <div class="answer">
+                        <p>Чем ваша услуга лучше других? Напишите короткое, но емкое описание.</p>
+                        <p>Не используйте в заголовке CAPSLOCK, спец-символы и прочие трюки для привлечения внимания</p>
+                        <p>Пишите грамотно, чтобы ваш заказ можно было без проблем найти через поиск</p>
+                    </div>
+                </div>
+            
+                <div class="faq">
+                    <div class="question">
+                        Обязательно ли выбирать исполнителя?
+                    </div>
+                    <div class="answer">
+                        <p>Чем ваша услуга лучше других? Напишите короткое, но емкое описание.</p>
+                        <p>Не используйте в заголовке CAPSLOCK, спец-символы и прочие трюки для привлечения внимания</p>
+                        <p>Пишите грамотно, чтобы ваш заказ можно было без проблем найти через поиск</p>
+                    </div>
+                </div>
+            
+                <div class="faq">
+                    <div class="question">
+                        Обязательно ли выбирать исполнителя?
+                    </div>
+                    <div class="answer">
+                        <p>Чем ваша услуга лучше других? Напишите короткое, но емкое описание.</p>
+                        <p>Не используйте в заголовке CAPSLOCK, спец-символы и прочие трюки для привлечения внимания</p>
+                        <p>Пишите грамотно, чтобы ваш заказ можно было без проблем найти через поиск</p>
+                    </div>
+                </div>
+            
+                <div class="faq">
+                    <div class="question">
+                        Обязательно ли выбирать исполнителя?
+                    </div>
+                    <div class="answer">
+                        <p>Чем ваша услуга лучше других? Напишите короткое, но емкое описание.</p>
+                        <p>Не используйте в заголовке CAPSLOCK, спец-символы и прочие трюки для привлечения внимания</p>
+                        <p>Пишите грамотно, чтобы ваш заказ можно было без проблем найти через поиск</p>
+                    </div>
+                </div>
+            
+                <div class="faq">
+                    <div class="question">
+                        Обязательно ли выбирать исполнителя?
+                    </div>
+                    <div class="answer">
+                        <p>Чем ваша услуга лучше других? Напишите короткое, но емкое описание.</p>
+                        <p>Не используйте в заголовке CAPSLOCK, спец-символы и прочие трюки для привлечения внимания</p>
+                        <p>Пишите грамотно, чтобы ваш заказ можно было без проблем найти через поиск</p>
+                    </div>
+                </div>
+            
+                <div class="faq">
+                    <div class="question">
+                        Обязательно ли выбирать исполнителя?
+                    </div>
+                    <div class="answer">
+                        <p>Чем ваша услуга лучше других? Напишите короткое, но емкое описание.</p>
+                        <p>Не используйте в заголовке CAPSLOCK, спец-символы и прочие трюки для привлечения внимания</p>
+                        <p>Пишите грамотно, чтобы ваш заказ можно было без проблем найти через поиск</p>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+        </div>
+    </main>
+    <footer id="footer">
+    <div class="container">
+        <div class="row-cols">
+            <div class="col-50">
+                <div class="title -h6">РейтингФрилансеров</div>
+                <ul class="ul-reset">
+                    <li><a href="#">О сервисе</a></li>
+                    <li><a href="#">Каталог фрилансеров</a></li>
+                    <li><a href="#">Добавить отзыв</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                </ul>
+            </div>
+            <div class="col-25">
+                <div class="title -h6">Помощь</div>
+                <ul class="ul-reset">
+                    <li><a href="#">Служба поддержки</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-25">
+                <div class="title -h6">Мы в соц. сетях</div>
+                <div class="socials">
+                    <a href="#">
+                        <svg class="icon-vk">
+                            <use xlink:href="img/symbol/sprite.svg#icon-vk"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon-ins">
+                            <use xlink:href="img/symbol/sprite.svg#icon-ins"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon-tw">
+                            <use xlink:href="img/symbol/sprite.svg#icon-tw"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon-yt">
+                            <use xlink:href="img/symbol/sprite.svg#icon-yt"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <a href="mailto:info@website.ru" class="link-email">info@website.ru</a>
+            &copy; 2020 РейтингФрилансеров. Все права защищены
+        </div>
+    </div>
+</footer>
+
+</div>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/mwheelIntent.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+</body>
+</html>
+

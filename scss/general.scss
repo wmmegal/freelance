@@ -1,0 +1,473 @@
+@charset "UTF-8";
+
+:root {
+    font-family: $panton;
+    color: $color;
+    font-size: $font-size;
+    background: #f9f9f9;
+}
+
+* {
+    outline: none;
+}
+
+a {
+    color: $color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+i {
+    font-style: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+ul.ul-reset, .ul-reset ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+::-moz-placeholder {
+    opacity: 1;
+}
+
+::-webkit-input-placeholder {
+    opacity: 1;
+}
+
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: $panton;
+}
+
+[class*=icon-] {
+    @extend %dib;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+
+    @include media-breakpoint('1199') {
+        margin-bottom: 1rem;
+    }
+
+    &.-h1 {
+        color: #15181e;
+        font-size: 2.5rem;
+        @include media-breakpoint('1199') {
+            font-size: 1.5rem;
+        }
+    }
+
+    &.-h2 {
+        font-size: 1.5rem;
+
+        @include media-breakpoint('1199') {
+            font-size: 1.125rem;
+        }
+    }
+
+    &.-h3 {
+        font-size: 1.25rem;
+    }
+
+    &.-h5 {
+        font-size: 1.125rem;
+    }
+
+    &.-h6 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: -1rem;
+    @include media-breakpoint('1199') {
+        font-size: 0.875rem;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-auto-rows: auto;
+    @include media-breakpoint('1199') {
+        grid-gap: 0.5rem;
+    }
+
+    &.col-3 {
+        grid-template-columns: repeat(3, 1fr);
+        @include media-breakpoint('1199') {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &.col-2 {
+        grid-template-columns: repeat(2, 1fr);
+        @include media-breakpoint('1199') {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.section {
+    background: #fff;
+    padding: 2.5rem 0;
+    @include media-breakpoint('1199') {
+        padding: 1rem 0;
+    }
+}
+
+.row-cols {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    [class*=col-] {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+
+        &.col-25 {
+            width: calc(25% - 1.5rem);
+            @include media-breakpoint('1199') {
+                width: 100%;
+            }
+        }
+
+        &.col-33 {
+            width: calc(100% / 3 - 1.5rem);
+            @include media-breakpoint('1199') {
+                width: 100%;
+            }
+        }
+
+        &.col-50 {
+            width: calc(50% - 1.5rem);
+            @include media-breakpoint('1199') {
+                width: 100%;
+            }
+        }
+
+        @include media-breakpoint('1199') {
+            margin-bottom: 1rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &.-margin-2 {
+        margin-left: -0.5rem;
+        margin-right: -0.5rem;
+
+        [class*=col-] {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+
+            &.col-25 {
+                width: calc(25% - 1rem);
+                @include media-breakpoint('1199') {
+                    width: 100%;
+                }
+            }
+
+            &.col-33 {
+                width: calc(100% / 3 - 1rem);
+                @include media-breakpoint('1199') {
+                    width: 100%;
+                }
+            }
+
+            &.col-50 {
+                width: calc(50% - 1rem);
+                @include media-breakpoint('1199') {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &.-margin-3 {
+        margin-left: -0.25rem;
+        margin-right: -0.25rem;
+
+        [class*=col-] {
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+
+            &.col-16 {
+                width: calc(100% / 6 - 0.5rem);
+                @include media-breakpoint('1199') {
+                    width: calc(100% / 3 - 0.5rem);
+                }
+            }
+
+            &.col-25 {
+                width: calc(25% - 0.5rem);
+                @include media-breakpoint('1199') {
+                    width: 100%;
+                }
+            }
+
+            &.col-33 {
+                width: calc(100% / 3 - 0.5rem);
+                @include media-breakpoint('1199') {
+                    width: 100%;
+                }
+            }
+
+            &.col-66 {
+                width: calc(100% / 3 * 2 - 0.5rem);
+                @include media-breakpoint('1199') {
+                    width: 100%;
+                }
+            }
+
+            &.col-50 {
+                width: calc(50% - 0.5rem);
+                @include media-breakpoint('1199') {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.slick-dots {
+    @extend %slick-dots;
+}
+
+.slider-items {
+    display: none !important;
+
+    @include media-breakpoint('1199') {
+        display: block !important;
+    }
+
+    .slick-arrow {
+        @extend %slick-arrows;
+
+        &.slick-prev {
+            @include media-breakpoint('1199') {
+                right: 2rem;
+            }
+
+        }
+
+        &.slick-next {
+            right: 0;
+        }
+    }
+}
+
+#main {
+    padding: 3rem 0;
+
+    @include media-breakpoint('1199') {
+        padding: 2rem 0;
+    }
+}
+
+.grid-main {
+    display: grid;
+    grid-template-areas: "content sidebar";
+    grid-template-columns: 75% 1fr;
+    grid-gap: 1.5rem;
+    margin-bottom: 5rem;
+    @include media-breakpoint('1199') {
+        grid-template-areas: "content" "sidebar";
+        grid-template-columns: 100%;
+        margin-bottom: 2rem;
+        grid-gap: 1rem;
+    }
+
+    #content {
+        grid-area: content;
+    }
+
+    #sidebar {
+        grid-area: sidebar;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.breadcrumbs {
+    font-size: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 1.5rem;
+
+    .icon-sep {
+        background: url("../img/icon-arr-path.svg") no-repeat;
+        width: 0.313rem;
+        height: 0.5rem;
+        margin: 0 0.75rem;
+    }
+
+    a, span {
+        color: $color;
+        font-size: 0.875rem;
+    }
+
+    &.-center {
+        justify-content: center;
+    }
+}
+
+.breadcrumbs + .title {
+    margin-bottom: 3rem;
+
+    @include media-breakpoint('1199') {
+        margin-bottom: 1rem;
+    }
+}
+
+.hidden-m {
+    @include media-breakpoint('1199') {
+        display: none !important;
+    }
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    font-size: 0;
+
+    & > span {
+        margin-left: 0.5rem;
+        font-size: .875rem;
+    }
+}
+
+.link-category {
+    color: $blue;
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    border-radius: $border-radius;
+    border: 1px solid $border;
+    padding: 0 .5rem;
+
+    &:hover, &.active {
+        background-color: $blue;
+        color: #fff;
+        border-color: $blue;
+    }
+}
+
+.other-accounts {
+    display: flex;
+
+    a {
+        margin-left: 0.25rem;
+
+        i {
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 0.125rem;
+
+            &.icon-fl {
+                background: url("../img/icon-fl.svg") no-repeat;
+            }
+
+            &.icon-weblancer {
+                background: url("../img/icon-weblancer.svg") no-repeat;
+            }
+
+            &.icon-habr {
+                background: url("../img/icon-habr.svg") no-repeat;
+            }
+
+            &.icon-upwork {
+                @include sprite($icon-upwork);
+            }
+
+            &.icon-kwork {
+                @include sprite($icon-kwork)
+            }
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+.scroll-pane {
+    width: 100%;
+    overflow: auto;
+}
+
+.checkbox {
+    @extend %checkbox;
+}
+
+.socials {
+    display: flex;
+
+    a {
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 0.063rem solid $border;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: 0.6rem;
+
+        svg {
+            fill: $blue;
+        }
+
+    }
+}
+
+a.link-more {
+    font-size: 0.875rem;
+    color: $dark !important;
+    text-decoration: none !important;
+
+    span {
+        color: $blue;
+        margin-right: 0.5rem;
+    }
+}
+

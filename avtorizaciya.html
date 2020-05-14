@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% include 'head.html' %}
+<body>
+<div id="page">
+    {% include 'header-search.html' %}
+    <main id="main" class="container">
+        <div class="breadcrumbs -center">
+            <a href="#">Главная</a>
+            <i class="icon-sep"></i>
+            <span>Блог</span>
+        </div>
+        <div class="title -h1 -center">Авторизация</div>
+        <div class="form -bg-white -padding -block -narrow-2">
+            <form action="">
+                <label class="form-field">
+                    <span class="label">E-Mail</span>
+                    <input type="text" name="email">
+                </label>
+                <label class="form-field">
+                    <span class="label">Пароль</span>
+                    <input type="password" name="password">
+                    <a href="#" class="link-lost-pass">Забыли пароль?</a>
+                </label>
+                <button class="btn -blue -full-width">Войти</button>
+            </form>
+            <div class="after-form-links -center">
+                Еще нет аккаунта? <a href="#">Пройдите регистрацию</a>
+            </div>
+        </div>
+    </main>
+    {% include 'footer.html' %}
+</div>
+{% include 'scripts.html' %}
+</body>
+</html>
+

@@ -1,0 +1,224 @@
+#header {
+    position: relative;
+    z-index: 10;
+    background: $blue;
+
+    .container {
+        padding: 1rem 0;
+        @extend %flex-inline;
+        position: relative;
+        @include media-breakpoint('1199') {
+            padding: 0.75rem 0;
+            display: block;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            max-width: 60%;
+
+            span {
+                font-size: 1.125rem;
+                color: #fff;
+                margin-left: 0.5rem;
+                @include media-breakpoint('1199') {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .btn-menu {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 1.9rem;
+            z-index: 10;
+
+            @include media-breakpoint('1199') {
+                display: block;
+            }
+
+            .icon-burger {
+                @include burger(18px, 2px, 6px, #FFF);
+                margin: 0 auto;
+            }
+
+            &.active {
+                .icon-burger {
+                    @include burger-to-cross;
+                }
+            }
+        }
+
+        #menu {
+            @include media-breakpoint('1199') {
+                display: none;
+                margin: 1rem -5vw 0 -5vw;
+            }
+
+            & > ul {
+                display: flex;
+                align-items: center;
+                @include media-breakpoint('1199') {
+                    display: block;
+                    border-top: 1px solid #3c73d3;
+                    position: relative;
+                    overflow: hidden;
+                    min-height: 50vh;
+                }
+
+                & > li {
+                    margin-left: 3rem;
+                    position: relative;
+                    @include media-breakpoint('1199') {
+                        margin-left: 0;
+                        border-bottom: 1px solid #3c73d3;
+                        position: static;
+                    }
+
+                    & > a {
+                        color: #fff;
+                        @include media-breakpoint('1199') {
+                            padding: 1rem 5vw;
+                            display: block;
+                            position: relative;
+                        }
+
+                        .icon-arr {
+                            background: url("../img/icon-arr-down-white.svg") no-repeat;
+                            width: 0.5rem;
+                            height: 0.313rem;
+                            margin-left: 0.25rem;
+                            transition: $transition;
+                            @include media-breakpoint('1199') {
+                                position: absolute;
+                                top: 50%;
+                                right: 5vw;
+                                transform: translateY(-50%) rotate(-90deg);
+                            }
+                        }
+                    }
+
+                    &.active {
+                        & > a {
+                            .icon-arr {
+                                transform: rotate(180deg);
+                            }
+                        }
+
+                        ul {
+                            @extend %visible;
+
+                            @include media-breakpoint('1199') {
+                                right: 0;
+                            }
+                        }
+                    }
+
+                    ul {
+                        width: 10.5rem;
+                        @extend %drop-list;
+                        @extend %hidden;
+                        @include media-breakpoint('1199') {
+                            background: $blue;
+                            width: 100%;
+                            box-shadow: none;
+                            top: 0;
+                            z-index: 10;
+                            opacity: 1;
+                            visibility: visible;
+                            right: -100%;
+
+                            li {
+                                border-bottom: 1px solid #3c73d3;
+
+                                a {
+                                    color: #fff;
+                                    opacity: 1;
+                                    padding: 1rem 5vw;
+
+                                    &:hover {
+                                        color: #fff;
+                                    }
+                                }
+
+                                &:first-child {
+                                    border-bottom: 0;
+
+
+                                    .btn-menu-back {
+                                        color: #fff;
+                                        font-size: 1rem;
+                                        position: relative;
+                                        display: block;
+                                        background: #1c53b1;
+                                        margin: -1rem;
+                                        padding: 1rem 1rem 1rem 3rem;
+                                        width: calc(100% + 2rem);
+                                        text-align: left;
+
+                                        .icon-arr {
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 1rem;
+                                            background: url("../img/icon-arr-down.svg") no-repeat;
+                                            width: 0.5rem;
+                                            height: 0.313rem;
+                                            transform: rotate(90deg) translateY(-50%);
+                                            margin-top: -2px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        #quick-search {
+            width: 30rem;
+            margin-bottom: 0;
+            @include media-breakpoint('1199') {
+                width: 100%;
+                position: absolute;
+                bottom: 1rem;
+                right: 0;
+                left: 0;
+                display: none;
+            }
+
+            label {
+                input {
+                    height: 2.5rem;
+                    font-size: 0.875rem;
+
+                    @include media-breakpoint('1199') {
+                        height: 3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint('1199') {
+        &.active {
+            .container {
+                height: calc(100vh - 65px);
+
+                #quick-search {
+                    display: block;
+                    z-index: 11;
+
+                    .search-results {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}

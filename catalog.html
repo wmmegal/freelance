@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% include 'head.html' %}
+<body>
+<div id="page">
+    {% include 'header-search.html' %}
+    <main id="main" class="container">
+        <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <i class="icon-sep"></i>
+            <span>Блог</span>
+        </div>
+        <section id="categories">
+            <h1 class="title -h1">Каталог исполнителей</h1>
+            <div class="grid col-3">
+                {% for i in range(0, 9) %}
+                    <div class="category">
+                        <div class="title -h6">Веб-программирование и cайты</div>
+                        <ul class="ul-reset">
+                            {% for h in range(0, 4) %}
+                                <li><a href="#">Веб-программирование</a> <span>152</span></li>
+                            {% endfor %}
+                            <li class="hidden"><a href="#">Веб-программирование</a> <span>152</span></li>
+                            <li class="hidden"><a href="#">Веб-программирование</a> <span>152</span></li>
+                        </ul>
+                        <button class="btn-category-more">Еще категории</button>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </section>
+        <article class="article">
+            <h1 class="title -h1">Биржа фриланса — просто и надежно!</h1>
+            <p>Биржа фриланса — это онлайн платформа, представляющая собой удобный способ взаимодействия между
+                работодателем и специалистом. Данный формат сотрудничества не требует личной встречи, а обговаривать все
+                детали проекта и оплачивать проделанный труд просто даже тогда, когда стороны находятся в разных уголках
+                планеты.</p>
+
+            <p>Фрилансер (англ. freelancer) - свободный работник. Когда-то таким словом именовали вольных наемников в
+                военном деле. Современный freelancer - это профессионал, который освободился от офисного гнёта и начал
+                трудиться дома или в коворкинге. Причем без обязательного официального образования. Главное - в
+                совершенстве владеть навыками, необходимыми для реализации конкретной задачи.</p>
+        </article>
+    </main>
+    {% include 'footer.html' %}
+</div>
+{% include 'scripts.html' %}
+</body>
+</html>
+

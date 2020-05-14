@@ -1,0 +1,39 @@
+.stars {
+    display: flex;
+
+    svg {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.25rem;
+
+        &.icon-star {
+            fill: #e5eaf1;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    &.clickable {
+        justify-content: flex-end;
+        @include media-breakpoint('767') {
+            justify-content: flex-start;
+        }
+        svg {
+            cursor: pointer;
+        }
+    }
+    @for $j from 1 through 5 {
+        &[data-value="#{$j}"] {
+            @for $i from 1 through $j {
+                svg {
+                    &:nth-child(#{$i}) {
+                        fill: $orange;
+                    }
+                }
+            }
+        }
+    }
+
+}

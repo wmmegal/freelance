@@ -1,0 +1,62 @@
+#e-404 {
+    background: $blue;
+    padding: 7rem 0;
+    text-align: center;
+    @include media-breakpoint('1199') {
+        padding: 2rem 0;
+    }
+
+    figure {
+        margin-bottom: 2rem;
+        font-size: 0;
+
+        img {
+            @include media-breakpoint('1199') {
+                max-width: 14.438rem;
+            }
+        }
+    }
+
+    .e-404-title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 0.5rem;
+        @include media-breakpoint('1199') {
+            font-size: 2rem;
+        }
+    }
+
+    p {
+        color: #a8c8ff;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem;
+        @include media-breakpoint('1199') {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+            margin: 0 1.5rem;
+            @include media-breakpoint('1199') {
+                display: block;
+                margin-bottom: 1.5rem;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

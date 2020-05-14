@@ -1,0 +1,32 @@
+.sort {
+    position: relative;
+    z-index: 10;
+
+    .sort-toggle {
+        font-size: 0.875rem;
+        color: $color;
+
+        .icon-arr-down {
+            transition: $transition;
+        }
+
+        span {
+            color: $blue;
+        }
+    }
+    ul {
+        @extend %drop-list;
+        @extend %hidden;
+        text-align: right;
+    }
+    &.active {
+        ul {
+            @extend %visible;
+        }
+        .sort-toggle {
+            .icon-arr-down {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

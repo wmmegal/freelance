@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% include 'head.html' %}
+<body>
+<div id="page">
+    {% include 'header-search.html' %}
+    <main id="main" class="container">
+        <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <i class="icon-sep"></i>
+            <span>Блог</span>
+        </div>
+        <h1 class="title -h1">Создать заказ</h1>
+        <div class="grid-main">
+            <div id="content">
+                <div class="-block -padding-2">
+                    <div class="success -center">
+                        <svg class="icon-tick-large">
+                            <use xlink:href="img/symbol/sprite.svg#icon-tick-large"></use>
+                        </svg>
+                        <p><strong>Готово!</strong> <br>
+                            Заказ отправлен лучшим исполнителям в <br>
+                            нашем каталоге и в ближайшее время Вы начнете получать
+                            <br>
+                            отклики на email, указанный при создании заказа.</p>
+                        <a href="#" class="btn -blue -center">Вернуться на главную</a>
+                    </div>
+                </div>
+            </div>
+            {% include 'sidebar-2.html' %}
+        </div>
+    </main>
+    {% include 'footer.html' %}
+</div>
+{% include 'scripts.html' %}
+</body>
+</html>
+

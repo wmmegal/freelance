@@ -1,0 +1,278 @@
+#freelancers {
+    .card {
+        overflow: hidden;
+
+        &-info {
+            @extend %flex-inline;
+            @include media-breakpoint('1199') {
+                display: block;
+            }
+
+            .user {
+                display: flex;
+                align-items: center;
+                @include media-breakpoint('1199') {
+                    justify-content: space-between;
+                    margin-bottom: 0.75rem;
+                }
+
+                figure {
+                    width: 3rem;
+                    height: 3rem;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    @include media-breakpoint('1199') {
+                        order: 2;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &-body {
+                    padding-left: 1rem;
+                    @include media-breakpoint('1199') {
+                        padding-left: 0;
+                    }
+
+                    .name {
+                        color: $dark;
+                        margin-bottom: 0.5rem;
+                        font-size: 0.875rem;
+                        font-weight: 600;
+                    }
+
+                    .info {
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+
+            .user-rating {
+
+                .rating {
+                    display: block;
+
+                    span {
+                        display: block;
+                        margin-top: .5rem;
+                        font-size: 0.75rem;
+                        margin-left: 0;
+                    }
+                }
+
+
+                @include media-breakpoint('1199') {
+                    margin-bottom: 0.5rem;
+
+                    .rating {
+                        display: flex;
+
+                        span {
+                            margin-top: 0;
+                            margin-left: 0.5rem;
+                        }
+                    }
+                }
+            }
+
+            .user-price {
+                line-height: 1.5rem;
+                @include media-breakpoint('1199') {
+                    display: flex;
+                    align-items: baseline;
+                }
+
+                .hour {
+                    color: $blue;
+                    font-size: 0.875rem;
+                    @include media-breakpoint('1199') {
+                        margin-right: 0.5rem;
+                    }
+                }
+
+                .month {
+                    font-size: 0.75rem;
+                }
+            }
+
+            .btn {
+                @include media-breakpoint('1199') {
+                    display: none;
+                }
+            }
+
+            .other-accounts {
+                display: none;
+                font-size: 0;
+
+                @include media-breakpoint('1199') {
+                    display: block;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+
+        &-portfolio {
+            .slider-portfolio {
+                margin: 0 -.25rem;
+
+                .slick-slide {
+                    padding: 0 .25rem;
+
+                    a {
+                        height: 8.75rem;
+                        display: block;
+                        @include media-breakpoint('1199') {
+                            height: 10rem;
+                        }
+                    }
+                }
+
+                .slick-arrow {
+                    @include center-y;
+                    z-index: 10;
+                    border: none;
+                    text-align: center;
+                    text-indent: -9999px;
+                    width: 2rem;
+                    height: 2rem;
+                    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.2);
+                    background-color: #ffffff;
+                    border-radius: 50%;
+
+                    &:before {
+                        content: '';
+                        @include center-xy;
+                        background: url("../img/icon-arr-path.svg") no-repeat;
+                        width: 0.313rem;
+                        height: 0.5rem;
+                    }
+
+
+                    &.slick-prev {
+                        left: 1rem;
+
+                        &:before {
+                            transform: translate(-50%, -50%) rotate(-180deg);
+                        }
+                    }
+
+                    &.slick-next {
+                        right: 1rem;
+                    }
+
+                    &.slick-disabled {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+
+        &-last-review {
+            .title {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .review {
+                &-head {
+                    margin-bottom: 0.5rem;
+                    @extend %flex-inline;
+                    font-size: 0.875rem;
+
+                    .author {
+                        span {
+                            color: $dark;
+                        }
+                    }
+
+                    @include media-breakpoint('1199') {
+                        display: block;
+
+                        .rating {
+                            margin-top: 0.5rem
+                        }
+                    }
+                }
+
+                &-text {
+                    font-size: 0.875rem;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+
+        &-categories {
+            font-size: 0;
+            margin: 0 -0.25rem;
+
+
+            .link-category {
+                margin: 0.25rem;
+            }
+        }
+
+        &-more {
+            @extend %flex-inline;
+            @include media-breakpoint('1199') {
+                display: none;
+            }
+        }
+
+        &-buttons {
+            display: none;
+            font-size: 0;
+
+            @include media-breakpoint('1199') {
+                display: block;
+
+                .btn {
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+
+    .banner {
+        box-shadow: 0 0.125rem 0.625rem rgba(36, 94, 195, 0.3);
+        background: $blue;
+        color: #fff;
+        padding: 2rem;
+        position: relative;
+        @include media-breakpoint('1199') {
+            padding: 1rem;
+        }
+
+        .title {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+            position: relative;
+            z-index: 1;
+            @include media-breakpoint('1199') {
+                font-size: 1.5rem;
+            }
+        }
+
+        p {
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            line-height: 1.5rem;
+            max-width: 27rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        figure {
+            @include center-y;
+            right: 4rem;
+            width: 11.25rem;
+            @include media-breakpoint('1199') {
+                right: 1rem;
+                opacity: 0.2;
+            }
+        }
+    }
+}

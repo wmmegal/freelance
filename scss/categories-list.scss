@@ -1,0 +1,68 @@
+.categories-list {
+    @include media-breakpoint('1199') {
+        display: none;
+    }
+    & > ul {
+        & > li {
+            border-bottom: 1px solid $border;
+            position: relative;
+
+            & > a {
+                padding: .75rem 1rem;
+                display: block;
+                position: relative;
+                font-size: .875rem;
+
+                &:after {
+                    content: '';
+                    background: url("../img/icon-arr-path.svg") no-repeat center;
+                    width: 0.4rem;
+                    height: 0.5rem;
+                    position: absolute;
+                    top: 50%;
+                    right: 1.5rem;
+                    transform: rotate(90deg) translateY(-50%);
+                    transition: $transition;
+                }
+            }
+            ul {
+                max-height: 0;
+                overflow: hidden;
+                transition: $transition;
+
+                li {
+                    a {
+                        display: block;
+                        line-height: 3rem;
+                        padding: 0 1rem;
+                        font-size: .875rem;
+                    }
+                    &:hover, &.active {
+                        a {
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+            &.active {
+                & > a {
+                    &:after {
+                        transform: rotate(-90deg) translateY(-50%);
+                        right: 1rem;
+                    }
+                }
+                ul {
+                    max-height: 1000px;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    background: $blue;
+                    width: 0.125rem;
+                }
+            }
+        }
+    }
+}

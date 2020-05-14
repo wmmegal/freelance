@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>DSGN</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+
+<body>
+<div id="page">
+    <header id="header">
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="img/logo.svg" alt="">
+            <span>РейтингФрилансеров</span>
+        </a>
+        <form action="" id="quick-search">
+            <label>
+                <input type="text" placeholder="Напишите, чем вам помочь...">
+            </label>
+            <ul class="ul-reset search-results">
+                <li><a href="#">Дизайн сайта</a></li>
+                <li><a href="#">Дизайн мобильного приложения </a></li>
+                <li><a href="#">Дизайн буклетов</a></li>
+                <li><a href="#">Дизайн интерьера</a></li>
+            </ul>
+        </form>
+        <button class="btn-menu">
+            <i class="icon-burger"></i>
+        </button>
+        <nav id="menu">
+            <ul class="ul-reset">
+                <li>
+                    <a href="#">Для исполнителя</a>
+                    <ul>
+                        <li><a href="#">Разместить заказ</a></li>
+                        <li><a href="#">Найти исполнителя</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Для заказчика</a>
+                    <ul>
+                        <li><a href="#">Разместить заказ</a></li>
+                        <li><a href="#">Найти исполнителя</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main id="main" class="container">
+        <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <i class="icon-sep"></i>
+            <span>Блог</span>
+        </div>
+        <h1 class="title -h1">Исполнители: <span class="-blue">Дизайн сайтов</span></h1>
+        <div class="grid-main">
+            <div id="content">
+                <div id="filter" class="-block">
+                    <form action="" id="filter-form">
+                        <div class="filter-search">
+                            <label>
+                                <input type="search" name="filter_search" placeholder="Поиск исполнителя">
+                                <svg class="icon-search">
+                                    <use xlink:href="img/symbol/sprite.svg#icon-search"></use>
+                                </svg>
+                            </label>
+                            <button type="button" class="btn-filter-toggle">
+                                <svg class="icon-filter">
+                                    <use xlink:href="img/symbol/sprite.svg#icon-filter"></use>
+                                </svg>
+                                Расширенный поиск
+                            </button>
+                            <button type="submit" class="btn -blue">Найти</button>
+                        </div>
+                        <div class="filter-details -padding-2">
+                            <div class="row-cols -margin-2">
+                                <div class="col-50 -mb-1">
+                                    <label class="form-field">
+                                        <span class="label">Специализация исполнителя</span>
+                                        <select name="category">
+                                            <option value="1">Дизайн сайтов</option>
+                                            <option value="1">Дизайн сайтов</option>
+                                            <option value="1">Дизайн сайтов</option>
+                                            <option value="1">Дизайн сайтов</option>
+                                            <option value="1">Дизайн сайтов</option>
+                                            <option value="1">Дизайн сайтов</option>
+                                            <option value="1">Дизайн сайтов</option>
+                                            <option value="1">Дизайн сайтов</option>
+                                            <option value="1">Дизайн сайтов</option>
+                                            <option value="1">Дизайн сайтов</option>
+                                            <option value="1">Дизайн сайтов</option>
+                                            <option value="1">Дизайн сайтов</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="col-50 -mb-1">
+                                    <label class="form-field -merged">
+                                        <span class="label">Возраст</span>
+                                        <input type="text" name="age_from" placeholder="От" class="-width-50">
+                                        <input type="text" name="age_to" placeholder="До" class="-width-50">
+                                    </label>
+                                </div>
+                                <div class="col-50 -mb-1">
+                                    <label class="form-field">
+                                        <span class="label">Местоположение</span>
+                                        <select name="country">
+                                            <option value="1">Все страны</option>
+                                            <option value="1">Все страны</option>
+                                            <option value="1">Все страны</option>
+                                            <option value="1">Все страны</option>
+                                            <option value="1">Все страны</option>
+                                            <option value="1">Все страны</option>
+                                            <option value="1">Все страны</option>
+                                            <option value="1">Все страны</option>
+                                            <option value="1">Все страны</option>
+                                            <option value="1">Все страны</option>
+                                            <option value="1">Все страны</option>
+                                            <option value="1">Все страны</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="col-50">
+                                    <div class="form-field -merged">
+                                        <span class="label">Стоимость работы</span>
+                                        <div class="row-cols -margin-3">
+                                            <div class="col-50">
+                                                <input type="text" name="price_from" placeholder="От" class="-width-50">
+                                                <input type="text" name="price_to" placeholder="До" class="-width-50">
+                                            </div>
+                                            <div class="col-50">
+                                                <select name="currency" class="-width-50">
+                                                    <option value="0">Руб.</option>
+                                                    <option value="1">$</option>
+                                                </select>
+                                                <select name="period" class="-width-50">
+                                                    <option value="0">Месяц</option>
+                                                    <option value="1">Час</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-25">
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="portfolio">
+                                        <span>С примерами работ</span>
+                                    </label>
+                                </div>
+                                <div class="col-25">
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="reviews">
+                                        <span>С отзывами</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="btn -blue -full-width">Найти</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="freelancers">
+                    <div class="card -block">
+                        <div class="card-info -line -padding-2">
+                            <div class="user">
+                                <figure>
+                                    <img src="img/img-user-2.jpg" alt="">
+                                </figure>
+                                <div class="user-body">
+                                    <div class="name">Дамира Давлатова</div>
+                                    <div class="info">28 лет, Россия</div>
+                                </div>
+                            </div>
+                            <div class="user-rating">
+                                <div class="rating">
+                                    <div class="stars" data-value="4">
+                                        
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                                    </div>
+                                    <span>5 отзывов</span>
+                                </div>
+                            </div>
+                            <div class="user-price">
+                                <div class="hour">$10/час</div>
+                                <div class="month">от $400/мес.</div>
+                            </div>
+                            <button type="button" class="btn -orange -shadow">Предложить заказ</button>
+                            <div class="other-accounts">
+                                <a href="#"><i class="icon-fl"></i></a>
+                                <a href="#"><i class="icon-weblancer"></i></a>
+                                <a href="#"><i class="icon-habr"></i></a>
+                                <a href="#"><i class="icon-upwork"></i></a>
+                                <a href="#"><i class="icon-kwork"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-portfolio -line -padding-2">
+                            <div class="slider-portfolio">
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        <div class="card-last-review -line -padding-2">
+                            <div class="title -h6">Последний отзыв</div>
+                            <div class="review">
+                                <div class="review-head">
+                                    <div class="author">
+                                        <span>Сергей Прядкин</span>, 21 марта 2020
+                                    </div>
+                                    <div class="rating">
+                                        <div class="stars" data-value="3">
+                                            
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    Из более чем 40-а откликов выбрал именно Илью и не прогадал. Сделал все быстро и на уровне! Спасибо за работу! Крайне рекомендую всем! В будущем еще будет сотрудничать
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-categories -line -padding-2">
+                            <a href="#" class="link-category">UX/UI</a>
+                            <a href="#" class="link-category">Веб-дизайн</a>
+                            <a href="#" class="link-category">Figma</a>
+                            <a href="#" class="link-category">Sketch</a>
+                            <a href="#" class="link-category">Прототипирование</a>
+                            <a href="#" class="link-category">Иконки</a>
+                            <a href="#" class="link-category">Копирайтинг</a>
+                        </div>
+                        <div class="card-more -padding-2">
+                            <a href="#" class="link-more"><span>→</span> Подробнее</a>
+                            <div class="other-accounts">
+                                <a href="#"><i class="icon-fl"></i></a>
+                                <a href="#"><i class="icon-weblancer"></i></a>
+                                <a href="#"><i class="icon-habr"></i></a>
+                                <a href="#"><i class="icon-upwork"></i></a>
+                                <a href="#"><i class="icon-kwork"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <a href="#" class="btn -blue -width-40">Подробнее</a>
+                            <a href="#" class="btn -orange -width-60">Предложить заказ</a>
+                        </div>
+                    </div>
+                    <div class="card -block">
+                        <div class="card-info -line -padding-2">
+                            <div class="user">
+                                <figure>
+                                    <img src="img/img-user-2.jpg" alt="">
+                                </figure>
+                                <div class="user-body">
+                                    <div class="name">Дамира Давлатова</div>
+                                    <div class="info">28 лет, Россия</div>
+                                </div>
+                            </div>
+                            <div class="user-rating">
+                                <div class="rating">
+                                    <div class="stars" data-value="4">
+                                        
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                                    </div>
+                                    <span>5 отзывов</span>
+                                </div>
+                            </div>
+                            <div class="user-price">
+                                <div class="hour">$10/час</div>
+                                <div class="month">от $400/мес.</div>
+                            </div>
+                            <button type="button" class="btn -orange -shadow">Предложить заказ</button>
+                        </div>
+                        <div class="card-categories -line -padding-2">
+                            <a href="#" class="link-category">UX/UI</a>
+                            <a href="#" class="link-category">Веб-дизайн</a>
+                            <a href="#" class="link-category">Figma</a>
+                            <a href="#" class="link-category">Sketch</a>
+                            <a href="#" class="link-category">Прототипирование</a>
+                            <a href="#" class="link-category">Иконки</a>
+                            <a href="#" class="link-category">Копирайтинг</a>
+                        </div>
+                        <div class="card-more -padding-2">
+                            <a href="#" class="link-more"><span>→</span> Подробнее</a>
+                            <div class="other-accounts">
+                                <a href="#"><i class="icon-fl"></i></a>
+                                <a href="#"><i class="icon-weblancer"></i></a>
+                                <a href="#"><i class="icon-habr"></i></a>
+                                <a href="#"><i class="icon-upwork"></i></a>
+                                <a href="#"><i class="icon-kwork"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <a href="#" class="btn -blue -width-40">Подробнее</a>
+                            <a href="#" class="btn -orange -width-60">Предложить заказ</a>
+                        </div>
+                    </div>
+                    <div class="banner -rounded -mb-2">
+                        <div class="title -h1">Являетесь исполнителем?</div>
+                        <p>Добавьте свой профиль к нам в каталог бесплатно и начните получать заказы от клиентов</p>
+                        <a href="#" class="btn -orange">Добавить</a>
+                        <figure>
+                            <img src="img/img-man.svg" alt="">
+                        </figure>
+                    </div>
+                    <div class="card -block">
+                        <div class="card-info -line -padding-2">
+                            <div class="user">
+                                <figure>
+                                    <img src="img/img-user-2.jpg" alt="">
+                                </figure>
+                                <div class="user-body">
+                                    <div class="name">Дамира Давлатова</div>
+                                    <div class="info">28 лет, Россия</div>
+                                </div>
+                            </div>
+                            <div class="user-rating">
+                                <div class="rating">
+                                    <div class="stars" data-value="4">
+                                        
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                                    </div>
+                                    <span>5 отзывов</span>
+                                </div>
+                            </div>
+                            <div class="user-price">
+                                <div class="hour">$10/час</div>
+                                <div class="month">от $400/мес.</div>
+                            </div>
+                            <button type="button" class="btn -orange -shadow">Предложить заказ</button>
+                        </div>
+                        <div class="card-portfolio -line -padding-2">
+                            <div class="slider-portfolio">
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                                    <div>
+                                        <a href="img/img-portfolio.jpg" data-fancybox="gallery"><img src="img/img-portfolio.jpg" alt="" class="-object-fit -rounded"></a>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                        <div class="card-categories -line -padding-2">
+                            <a href="#" class="link-category">UX/UI</a>
+                            <a href="#" class="link-category">Веб-дизайн</a>
+                            <a href="#" class="link-category">Figma</a>
+                            <a href="#" class="link-category">Sketch</a>
+                            <a href="#" class="link-category">Прототипирование</a>
+                            <a href="#" class="link-category">Иконки</a>
+                            <a href="#" class="link-category">Копирайтинг</a>
+                        </div>
+                        <div class="card-more -padding-2">
+                            <a href="#" class="link-more"><span>→</span> Подробнее</a>
+                            <div class="other-accounts">
+                                <a href="#"><i class="icon-fl"></i></a>
+                                <a href="#"><i class="icon-weblancer"></i></a>
+                                <a href="#"><i class="icon-habr"></i></a>
+                                <a href="#"><i class="icon-upwork"></i></a>
+                                <a href="#"><i class="icon-kwork"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <a href="#" class="btn -blue -width-40">Подробнее</a>
+                            <a href="#" class="btn -orange -width-60">Предложить заказ</a>
+                        </div>
+                    </div>
+                    <div class="card -block">
+                        <div class="card-info -line -padding-2">
+                            <div class="user">
+                                <figure>
+                                    <img src="img/img-user-2.jpg" alt="">
+                                </figure>
+                                <div class="user-body">
+                                    <div class="name">Дамира Давлатова</div>
+                                    <div class="info">28 лет, Россия</div>
+                                </div>
+                            </div>
+                            <div class="user-rating">
+                                <div class="rating">
+                                    <div class="stars" data-value="4">
+                                        
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                                    </div>
+                                    <span>5 отзывов</span>
+                                </div>
+                            </div>
+                            <div class="user-price">
+                                <div class="hour">$10/час</div>
+                                <div class="month">от $400/мес.</div>
+                            </div>
+                            <button type="button" class="btn -orange -shadow">Предложить заказ</button>
+                        </div>
+                        <div class="card-last-review -line -padding-2">
+                            <div class="title -h6">Последний отзыв</div>
+                            <div class="review">
+                                <div class="review-head">
+                                    <div class="author">
+                                        <span>Сергей Прядкин</span>, 21 марта 2020
+                                    </div>
+                                    <div class="rating">
+                                        <div class="stars" data-value="3">
+                                            
+    <svg class="icon-star" data-value="1">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="2">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="3">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="4">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+    <svg class="icon-star" data-value="5">
+        <use xlink:href="img/symbol/sprite.svg#icon-star"></use>
+    </svg>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    Из более чем 40-а откликов выбрал именно Илью и не прогадал. Сделал все быстро и на уровне! Спасибо за работу! Крайне рекомендую всем! В будущем еще будет сотрудничать
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-categories -line -padding-2">
+                            <a href="#" class="link-category">UX/UI</a>
+                            <a href="#" class="link-category">Веб-дизайн</a>
+                            <a href="#" class="link-category">Figma</a>
+                            <a href="#" class="link-category">Sketch</a>
+                            <a href="#" class="link-category">Прототипирование</a>
+                            <a href="#" class="link-category">Иконки</a>
+                            <a href="#" class="link-category">Копирайтинг</a>
+                        </div>
+                        <div class="card-more -padding-2">
+                            <a href="#" class="link-more"><span>→</span> Подробнее</a>
+                            <div class="other-accounts">
+                                <a href="#"><i class="icon-fl"></i></a>
+                                <a href="#"><i class="icon-weblancer"></i></a>
+                                <a href="#"><i class="icon-habr"></i></a>
+                                <a href="#"><i class="icon-upwork"></i></a>
+                                <a href="#"><i class="icon-kwork"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <a href="#" class="btn -blue -width-40">Подробнее</a>
+                            <a href="#" class="btn -orange -width-60">Предложить заказ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-links">
+                    <span>1</span>
+                    <a href="#">2</a>
+                    <a href="#">2</a>
+                    <a href="#">2</a>
+                    <a href="#">2</a>
+                </div>
+            </div>
+            <div id="sidebar">
+                <div class="categories-list -block">
+                    <ul class="ul-reset">
+                        <li>
+                            <a href="#">Веб программирование и сайты</a>
+                            <ul>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Программирование ПО и систем</a>
+                            <ul>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Тексты и Переводы </a>
+                            <ul>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Продвижение сайтов (SEO)</a>
+                            <ul>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Веб-дизайн и Интерфейсы</a>
+                            <ul>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Веб программирование и сайты</a>
+                            <ul>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Программирование ПО и систем</a>
+                            <ul>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Тексты и Переводы </a>
+                            <ul>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Продвижение сайтов (SEO)</a>
+                            <ul>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Веб-дизайн и Интерфейсы</a>
+                            <ul>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Веб программирование и сайты</a>
+                            <ul>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Программирование ПО и систем</a>
+                            <ul>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Тексты и Переводы </a>
+                            <ul>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Продвижение сайтов (SEO)</a>
+                            <ul>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Веб-дизайн и Интерфейсы</a>
+                            <ul>
+                                <li><a href="#">Дизайн сайтов</a></li>
+                                <li><a href="#">Баннеры</a></li>
+                                <li><a href="#">Дизайн мобильных приложений</a></li>
+                                <li><a href="#">Иконки и Пиксель-арт</a></li>
+                                <li><a href="#">Дизайн интерфейсов и игр</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <article class="article">
+            <h1 class="title -h1">Биржа фриланса — просто и надежно!</h1>
+            <p>Биржа фриланса — это онлайн платформа, представляющая собой удобный способ взаимодействия между
+                работодателем и специалистом. Данный формат сотрудничества не требует личной встречи, а обговаривать все
+                детали проекта и оплачивать проделанный труд просто даже тогда, когда стороны находятся в разных уголках
+                планеты.</p>
+
+            <p>Фрилансер (англ. freelancer) - свободный работник. Когда-то таким словом именовали вольных наемников в
+                военном деле. Современный freelancer - это профессионал, который освободился от офисного гнёта и начал
+                трудиться дома или в коворкинге. Причем без обязательного официального образования. Главное - в
+                совершенстве владеть навыками, необходимыми для реализации конкретной задачи.</p>
+        </article>
+    </main>
+    <footer id="footer">
+    <div class="container">
+        <div class="row-cols">
+            <div class="col-50">
+                <div class="title -h6">РейтингФрилансеров</div>
+                <ul class="ul-reset">
+                    <li><a href="#">О сервисе</a></li>
+                    <li><a href="#">Каталог фрилансеров</a></li>
+                    <li><a href="#">Добавить отзыв</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                </ul>
+            </div>
+            <div class="col-25">
+                <div class="title -h6">Помощь</div>
+                <ul class="ul-reset">
+                    <li><a href="#">Служба поддержки</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-25">
+                <div class="title -h6">Мы в соц. сетях</div>
+                <div class="socials">
+                    <a href="#">
+                        <svg class="icon-vk">
+                            <use xlink:href="img/symbol/sprite.svg#icon-vk"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon-ins">
+                            <use xlink:href="img/symbol/sprite.svg#icon-ins"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon-tw">
+                            <use xlink:href="img/symbol/sprite.svg#icon-tw"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon-yt">
+                            <use xlink:href="img/symbol/sprite.svg#icon-yt"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <a href="mailto:info@website.ru" class="link-email">info@website.ru</a>
+            &copy; 2020 РейтингФрилансеров. Все права защищены
+        </div>
+    </div>
+</footer>
+
+</div>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/mwheelIntent.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+</body>
+</html>
+

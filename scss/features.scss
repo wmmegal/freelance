@@ -1,0 +1,67 @@
+#features {
+    .wrap {
+        border-radius: 0.25rem;
+        border: 0.063rem solid #e8e8e8;
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+
+    .-center {
+        @include media-breakpoint('1199') {
+            text-align: left;
+        }
+
+    }
+
+    .feature {
+        @extend %flex-inline;
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid $border;
+        font-size: 0.875rem;
+        @include media-breakpoint('1199') {
+            display: block;
+            padding: 1rem;
+
+            &:first-child {
+                display: none;
+            }
+        }
+
+        .feature-title {
+            width: 20%;
+            font-weight: 600;
+            color: $blue;
+            @include media-breakpoint('1199') {
+                width: 100%;
+                margin-bottom: 0.5rem;
+                font-size: 0.875rem;
+            }
+        }
+
+        .feature-desc {
+            width: 38%;
+            line-height: 1.5rem;
+            @include media-breakpoint('1199') {
+                width: 100%;
+                font-size: 0.75rem;
+                margin-bottom: 0.5rem;
+
+                &:before {
+                    content: attr(data-title);
+                    display: block;
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    color: $dark;
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}

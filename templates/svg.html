@@ -1,0 +1,5 @@
+{% macro data(name='') %}
+    <svg class="{{ name }}">
+        <use xlink:href="img/symbol/sprite.svg#{{ name }}"></use>
+    </svg>
+{% endmacro %}
